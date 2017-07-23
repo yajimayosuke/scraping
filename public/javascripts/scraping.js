@@ -1,6 +1,8 @@
 var page = require('webpage').create();
-var club_code = 112;
-var day = 201707
+//main.jsの引数(option)を呼び出す
+var system = require('system');
+var club_code = system.args[1];
+var day = system.args[2];
 var address = 'https://www.central.co.jp/club/schedule_detail.html?club_code='+ club_code +'&yyyymm='+ day;
 //ヘッドレスブラウザを開く
 page.open(address, function(status) {
