@@ -4,7 +4,7 @@ var childProcess = require('child_process');
 var phantomjs = require('phantomjs');
 var binPath = phantomjs.path;
 
-var scraping = "public/javascripts/test.js";//"scraping.js";//jsファイルまでのパスを書く
+var scraping = "$HOME/workspace/CentralSportScraping/public/javascripts/test.js";//"scraping.js";//jsファイルまでのパスを書く
 
 var gazo_name = "www.google.co.jp";
 var gazo_file = gazo_name + ".png";
